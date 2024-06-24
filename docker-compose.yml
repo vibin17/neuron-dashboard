@@ -1,0 +1,13 @@
+version: "3.8"
+
+networks:
+  asmpc-network:
+    driver: bridge
+
+services:
+  neuron:
+    image: emqx/neuron:2.8.2
+    container_name: nginx
+    ports:
+      - "5113:7000"
+      

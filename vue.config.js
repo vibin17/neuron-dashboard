@@ -20,7 +20,7 @@ module.exports = {
         },
       },
       '/api': {
-        target: process.env.VUE_APP_HOST,
+        target: 'http://localhost:5113',
         changeOrigin: true,
       },
     },
