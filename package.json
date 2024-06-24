@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
     "dev:pc": "export VUE_APP_HOST=http://localhost:7003 && yarn serve",
     "dev:server": "export VUE_APP_HOST=ws://iot-platform.cloud:6170 && yarn serve",
     "dev:test": "export VUE_APP_HOST=http://124.70.166.104:7000 && yarn serve",
@@ -20,6 +20,7 @@
     "base64-js": "^1.5.1",
     "blueimp-md5": "^2.19.0",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
     "dateformat": "^5.0.2",
     "dayjs": "^1.10.4",
     "echarts": "^5.2.2",
